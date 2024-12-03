@@ -8,7 +8,7 @@ st.set_page_config(page_title="Fashion Sales Dashboard", page_icon="🛍️", la
 
 # Load data
 data = pd.read_excel('data_with_classified_categories.xlsx')
-
+print(data.head())
 # Ensure Quantity_Sold and Quantity_In_Stock columns are numeric
 data['Quantity_Sold'] = pd.to_numeric(data['Quantity_Sold'], errors='coerce').fillna(0)
 data['Quantity_In_Stock'] = pd.to_numeric(data['Quantity_In_Stock'], errors='coerce').fillna(0)
